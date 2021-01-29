@@ -1,6 +1,7 @@
 #!/bin/bash
 LOGFILE=~/runtime.log
 #with help from spark.co.nz data calculator and making.pusher.com/per-ip-rate-limiting-with-iptables
+# located at https://github.com/bradenupchurch/k8s/blob/master/rate-limit-k8s-pod.sh
 printf "\n\nRunning iptables rate-limits setting to 1500k per pod (might be fixable in Xsan buffering).\n"
 sudo iptables --flush
 sudo apt-get install iptables
